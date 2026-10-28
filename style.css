@@ -1,0 +1,313 @@
+body {
+    margin: 0; 
+    background-color: #310001; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Cabeçalho */ 
+header{
+    background-color: #7D4E17; 
+    text-align: center; 
+    padding:30px; 
+}
+
+/* Logo */ 
+header img{
+    width: 550px; 
+    max-width: 90%; 
+} 
+
+/* Botões do menu */ 
+nav a{
+    margin-top: 20px; 
+} 
+
+nav a{
+    width: 100px;
+color:white; 
+text-decoration: none; 
+border: 1px solid white; 
+padding: 5px 1px; 
+margin: 3px; 
+display: inline-block; 
+font-size: 13px; 
+} 
+
+/* Efeito dos botões */ 
+nav a:hover{
+    background-color: #f5E7D0; 
+    font-family:'Jacques Francois', serif; 
+    font-size: 24px; 
+    font-weight: normal;  
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+main{
+    text-align: center; 
+    color: #FFF; 
+    font-size: 9px; 
+} 
+
+main h1{ 
+    padding: 25px 0; 
+    
+}
+
+/* Galeria de categorias */
+.container.text-center {
+    width: min(970px, calc(100% - 48px));
+    margin: 0 auto 56px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: clamp(24px, 11vw, 120px);
+    row-gap: 56px;
+}
+
+.col {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.card-body {
+    min-height: 70px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.card-text,
+.card-body > a {
+    display: none;
+}  
+
+.col img:hover {
+    opacity: 0.5; 
+
+}
+
+@media (max-width: 760px) {
+    .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+        row-gap: 36px;
+    }
+}
+
+@media (max-width: 520px) {
+    .container.text-center {
+        width: min(320px, calc(100% - 32px));
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+} 
+
+
+.makeup {
+    background-color: #310001; ;
+    padding: 30px 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 700px;
+}
+
+.botao-valores {
+    background-color: #6D410C;
+    color: white;
+    border: none;
+    padding: 25px 45px;
+    display: block;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.makeup hr {
+    border: none;
+    border-top: 2px solid white;
+    margin: 25px -40px 20px;
+}
+
+.makeup h2 {
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.descricao {
+    color: white;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.foto-makeup {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 5%;
+    background-color: black;
+}
+
+.foto-makeup img {
+    width: 1190px;
+    object-fit: cover;
+    display: block;
+}
+
+.titulo-foto {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+/*FUNDO DA PÁGINA */
+.galeria{
+    background-color:#310001; 
+    padding: 30px; 
+    min-height:900px; 
+    color: white; 
+    font-family:Arial,sans-serif;
+}
+
+/*TÍTULO PRINCIPAL*/ 
+.galeria h2{
+    color: white; 
+    font-size:18px; 
+    font-weight:normal;
+    margin-bottom:80px; 
+}
+
+/* ORGANIZAÇÃO DAS FOTOS */ 
+.fotos{ 
+    display:grid; 
+    grid-template-columns:repeat(3,238px); 
+    justify-content: space-around; 
+    row-gap: 75px; 
+} 
+
+/* CADA FOTO E SUA FAIXA */ 
+.foto{
+    width: 238px;
+    background-color:#310001; 
+}
+
+/* TAMANHO DAS IMAGENS */ 
+.foto img{
+    width: 238px; 
+    height: 316px; 
+    object-fit: cover; 
+    display:block; 
+}
+
+/*TÍTULOS ABAIXO DAS FOTOS */ 
+.titulo-foto{
+    background-color: black;
+    color:white; 
+    text-align: center;
+    padding: 18px 10px; 
+    font-size:14px; 
+    min-height: 30px;
+
+}.foto img:hover {
+    opacity: 0.5; 
+
+}
+
+
+body {
+    background-color: #310001;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.whatsapp {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.tabela {
+    width: 100%;
+    border: 3px solid #D6A04D;
+    border-collapse: collapse;
+    color: white;
+    font-size: 17px;
+}
+
+.tabela td {
+    border-right: 3px solid #D6A04D;
+    padding: 20px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.tabela tr td:last-child {
+    border-right: none;
+}
+
+.tabela td:nth-child(1) {
+    width: 28%;
+}
+
+.tabela td:nth-child(2) {
+    width: 22%;
+    text-align: center;
+}
+
+.tabela td:nth-child(3) {
+    width: 26%;
+}
+
+.tabela td:nth-child(4) {
+    width: 24%;
+    text-align: center;
+}
